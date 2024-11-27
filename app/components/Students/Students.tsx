@@ -7,61 +7,54 @@ import Marquee from "@/components/ui/marquee";
 // CAROUSEL DATA
 
 interface DataType {
+  profession: string;
   name: string;
-  username: string;
-  body: string;
-  img: string;
+  imgSrc: string;
+  starimg: string;
+  detail: string;
 }
 
 const reviews: DataType[] = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    profession: 'UX/UI Designer',
+        name: 'Andrew Williams',
+        imgSrc: '/assets/students/user-1.jpg',
+        starimg: '/assets/students/stars.png',
+        detail: "I have been a Junior Graphic Designer for more then 10 years. Some things are problem that I had and teach how to solve them. That's why this course is so great!"
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    profession: 'UX/UI Designer',
+    name: 'Cristian Doru Barin',
+    imgSrc: '/assets/students/user-2.jpg',
+    starimg: '/assets/students/stars.png',
+    detail: "I have been a Junior Graphic Designer for more then 10 years. Some things are problem that I had and teach how to solve them. That's why this course is so great!"
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    profession: 'UX/UI Designer',
+    name: 'Tanzeel Ur Rehman',
+    imgSrc: '/assets/students/user-3.jpg',
+    starimg: '/assets/students/stars.png',
+    detail: "I have been a Junior Graphic Designer for more then 10 years. Some things are problem that I had and teach how to solve them. That's why this course is so great!"
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
-  },
-  {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
-  },
-  {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
+    profession: 'UX/UI Designer',
+    name: 'Andrew Williams',
+    imgSrc: '/assets/students/user-1.jpg',
+    starimg: '/assets/students/stars.png',
+    detail: "I have been a Junior Graphic Designer for more then 10 years. Some things are problem that I had and teach how to solve them. That's why this course is so great!"
   },
 ];
 
 const ReviewCard = ({
-  img,
+  profession,
   name,
-  username,
-  body,
+  imgSrc,
+  detail,
 }: {
-  img: string;
+  profession: string;
   name: string;
-  username: string;
-  body: string;
+  imgSrc: string;
+  detail: string;
 }) => {
   return (
     <figure
@@ -74,15 +67,15 @@ const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+        <img className="rounded-full" width="32" height="32" alt="" src={imgSrc} />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}
           </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
+          <p className="text-xs font-medium dark:text-white/40">{profession}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <blockquote className="mt-2 text-sm">{detail}</blockquote>
     </figure>
   );
 };
@@ -119,14 +112,14 @@ export function MarqueeDemo() {
         {/* First Marquee Row */}
         <Marquee pauseOnHover className="[--duration:15s] gap-4">
           {firstRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
+            <ReviewCard key={review.name} {...review} />
           ))}
         </Marquee>
 
         {/* Second Marquee Row (Reverse Direction) */}
         <Marquee reverse pauseOnHover className="[--duration:15s] mt-4 gap-4">
           {secondRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
+            <ReviewCard key={review.name} {...review} />
           ))}
         </Marquee>
 

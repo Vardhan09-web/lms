@@ -1,6 +1,8 @@
 "use client"
+import BlurIn from '@/components/ui/blur-in';
 import Dropdownone from './Dropdownone';
 import Dropdowntwo from './Dropdowntwo';
+import TypingAnimation from '@/components/ui/typing-animation';
 
 
 const Banner = () => {
@@ -9,12 +11,21 @@ const Banner = () => {
             <div className="relative px-6 lg:px-8">
                 <div className="mx-auto max-w-5xl pt-16 sm:pt-40 sm:pb-24">
                     <div className="text-center">
-                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-75px md:4px">
-                            Advance your engineering <br /> skills with our courses
-                        </h1>
-                        <p className="mt-6 text-lg leading-8 text-black">
+                        {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-75px md:4px"> */}
+                        <BlurIn
+      word="Advance your engineering  skills with our courses"
+      className="text-4xl font-bold text-black dark:text-white"
+    />
+                            {/* Advance your engineering <br /> skills with our courses */}
+                        {/* </h1> */}
+                        <TypingAnimation
+      className="text-lg mt-6 text-black leading-8"
+      text="Build skills with our courses and mentor from world-class companies."
+    />
+                        {/* <p className="mt-6 text-lg leading-8 text-black">
                             Build skills with our courses and mentor from world-class companies.
-                        </p>
+                        </p> */}
+
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <div className="hidden sm:block -space-x-2 overflow-hidden">
                                 <img

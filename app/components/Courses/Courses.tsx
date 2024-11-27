@@ -165,7 +165,7 @@ const NamesList = () => {
                         {name.course}
                     </div>
                     <div className="mt-6 block text-lg font-semibold text-green border-solid border-2 border-green rounded-md px-1">
-                        ${name.price}
+                    ₹{name.price}
                     </div>
                 </div>
                 <p aria-hidden="true" className="mt-2 mb-5 text-2xl font-semibold ">
