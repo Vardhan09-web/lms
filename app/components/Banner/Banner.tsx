@@ -11,46 +11,53 @@ const Banner = () => {
             <div className="relative px-6 lg:px-8">
                 <div className="mx-auto max-w-5xl pt-16 sm:pt-40 sm:pb-24">
                     <div className="text-center">
+
                         {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-75px md:4px"> */}
                         <BlurIn
-      word="Advance your engineering  skills with our courses"
-      className="text-4xl font-bold text-black dark:text-white"
-    />
-                            {/* Advance your engineering <br /> skills with our courses */}
+                            word="Advance your engineering  skills with our courses"
+                            className="text-4xl font-bold text-black dark:text-white"
+                        />
+                        {/* Advance your engineering <br /> skills with our courses */}
                         {/* </h1> */}
                         <TypingAnimation
-      className="text-lg mt-6 text-black leading-8"
-      text="Build skills with our courses and mentor from world-class companies."
-    />
+                            className="text-lg mt-6 text-black leading-8"
+                            text="Build skills with our courses and mentor from world-class companies."
+                        />
                         {/* <p className="mt-6 text-lg leading-8 text-black">
                             Build skills with our courses and mentor from world-class companies.
                         </p> */}
+
 
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <div className="hidden sm:block -space-x-2 overflow-hidden">
                                 <img
                                     className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
-                                    src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    src="/assets/banner/Sahithi.jpeg"
                                     alt=""
                                 />
                                 <img
                                     className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
-                                    src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    src="/assets/banner/Pranavi.jpeg"
                                     alt=""
                                 />
                                 <img
                                     className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
-                                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                                    src="/assets/banner/Siri.jpeg"
                                     alt=""
                                 />
                                 <img
                                     className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
-                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    src="/assets/banner/Srujana.jpeg"
                                     alt=""
                                 />
                                 <img
                                     className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
-                                    src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                    src="/assets/banner/Vyshnavi.jpeg"
+                                    alt=""
+                                />
+                                <img
+                                    className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+                                    src="/assets/banner/Vardhan.jpeg"
                                     alt=""
                                 />
                             </div>

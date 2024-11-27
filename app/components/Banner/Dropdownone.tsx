@@ -77,6 +77,8 @@
 
 
 
+
+
 type Coursetype = {
   name: string;
 };
@@ -106,4 +108,6 @@ const DisplayCards = () => {
   );
 };
 
+
 export default DisplayCards;
+

@@ -7,7 +7,7 @@ import Marquee from "@/components/ui/marquee";
 // CAROUSEL DATA
 
 interface DataType {
-  profession: string;
+  profession: string; 
   name: string;
   imgSrc: string;
   starimg: string;

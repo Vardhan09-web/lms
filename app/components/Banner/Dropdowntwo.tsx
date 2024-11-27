@@ -86,17 +86,21 @@
 
 
 
+
 type Hourtype = {
   name: string;
-  };
-
+};
 
 const Hour: Hourtype[] = [
   { name: '20hrs in a Month' },
   { name: '30hrs in a Month' },
   { name: '40hrs in a Month' },
   { name: '50hrs in a Month' },
-]
+
+];
+
+
+
 
 const DisplayCards = () => {
   return (
@@ -116,4 +120,8 @@ const DisplayCards = () => {
   );
 };
 
+
 export default DisplayCards;
+
+
+

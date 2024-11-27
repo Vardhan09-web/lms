@@ -74,7 +74,11 @@ const footer = () => {
             {/* All Rights Reserved */}
 
             <div className='pb-24 px-4'>
+
                 <h3 className='text-center text-offwhite'>@2024 - All Rights Reserved by Eduwedo.in</h3>
+
+                
+
             </div>
 
         </div>
