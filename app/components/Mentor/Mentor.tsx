@@ -73,10 +73,10 @@ const Mentor = () => {
                     </div>
                 </div>
 
-                <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                <div className=" grid grid-cols-1 gap-y-0 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
-                        <div key={product.id} className="group relative">
-                            <div className="min-h-80 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-80">
+                        <div key={product.id} className=" h-[65%] group relative">
+                            <div className="min-h-65 aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none lg:h-55">
                                 <img
                                     src={product.imageSrc}
                                     alt={product.imageAlt}

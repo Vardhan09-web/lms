@@ -83,26 +83,19 @@ type Coursetype = {
   name: string;
 };
 
-const course: Coursetype[] = [
-  { name: 'UX and UI Design' },
-  { name: 'Front End Development' },
-  { name: 'Back End Development' },
-  { name: 'Ethical Hacking' },
-];
+const course: Coursetype= 
+  { name: 'UX and UI Design'};
 
 const DisplayCards = () => {
   return (
     <div className="w-full">
       <h3 className="text-lg text-lightgrey mb-6">What do you want to learn?</h3>
-      <div className="grid grid-rows-1 sm:grid-rows-2 lg:grid-rows-4 gap-4">
-        {course.map((item) => (
+      <div className="grid gap-4">
           <div
-            key={item.name}
             className="rounded-lg border p-4 text-center shadow-md bg-white text-gray-800 border-gray-300"
           >
-            <h4 className="text-xl font-semibold">{item.name}</h4>
+            <h4 className="text-xl font-semibold">{course.name}</h4>
           </div>
-        ))}
       </div>
     </div>
   );

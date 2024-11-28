@@ -77,7 +77,7 @@ const Banner = () => {
                     {/* DROPDOWN BUTTONS */}
 
 
-                    <div className="mx-auto max-w-4xl mt-24 pt-6 pb-8 px-6 lg:max-w-4xl lg:px-8 bg-white rounded-lg boxshadow">
+                    <div className="mx-auto max-w-4xl mt-24 pt-6 pb-8 px-6 lg:max-w-4xl lg:px-8 shadow-lg shadow-purple bg-white rounded-lg boxshadow">
                         <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-8 xl:gap-x-8">
                             <div className="col-span-3">
                                 <Dropdownone />

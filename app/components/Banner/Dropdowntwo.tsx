@@ -91,13 +91,8 @@ type Hourtype = {
   name: string;
 };
 
-const Hour: Hourtype[] = [
-  { name: '20hrs in a Month' },
-  { name: '30hrs in a Month' },
-  { name: '40hrs in a Month' },
-  { name: '50hrs in a Month' },
-
-];
+const Hour:Hourtype= 
+  { name: '20hrs in a Month' };
 
 
 
@@ -105,16 +100,12 @@ const Hour: Hourtype[] = [
 const DisplayCards = () => {
   return (
     <div className="w-full">
-      <h3 className="text-lg text-lightgrey mb-6">What do you want to learn?</h3>
-      <div className="grid grid-rows-1 sm:grid-rows-2 lg:grid-rows-4 gap-4">
-        {Hour.map((item) => (
+      <h3 className="text-lg text-lightgrey mb-6 ">Hours you going to invest?</h3>
+      <div className="grid">
           <div
-            key={item.name}
-            className="rounded-lg border p-4 text-center shadow-md bg-white text-gray-800 border-gray-300"
-          >
-            <h4 className="text-xl font-semibold">{item.name}</h4>
+            className="rounded-lg border p-4 text-center shadow-md bg-white text-gray-800 border-gray-300">
+            <h4 className="text-xl font-semibold">{Hour.name}</h4>
           </div>
-        ))}
       </div>
     </div>
   );
