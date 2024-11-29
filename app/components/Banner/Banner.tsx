@@ -14,7 +14,7 @@ const Banner = () => {
 
                         {/* <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-75px md:4px"> */}
                         <BlurIn
-                            word="Advance your engineering  skills with our courses"
+                            word="Empowering Minds Envisioning Future"
                             className="text-4xl font-bold text-black dark:text-white"
                         />
                         {/* Advance your engineering <br /> skills with our courses */}
