@@ -11,7 +11,8 @@ const products: ProductType[] = [
     {
         id: 1,
         section: "Company",
-        link: ['About us', 'Blog', 'Contact us', 'Pricing', 'Testimonials'],
+        // link: ['About us', 'Blog', 'Contact us', 'Pricing', 'Testimonials'],
+        link: ['About us', 'Blog', 'Contact us', 'Testimonials'],
     },
     {
         id: 2,
@@ -41,7 +42,7 @@ const footer = () => {
 
                     {/* CLOUMN-2/3 */}
 
-                    {products.map((product) => (
+                    {/* {products.map((product) => (
                         <div key={product.id} className="group relative col-span-2">
                             <p className="text-white text-xl font-semibold mb-9">{product.section}</p>
                             <ul>
@@ -52,7 +53,45 @@ const footer = () => {
                                 ))}
                             </ul>
                         </div>
-                    ))}
+                    ))} */}
+
+
+{products.map((product) => (
+  <div key={product.id} className="group relative col-span-2">
+    <p className="text-white text-xl font-semibold mb-9">{product.section}</p>
+    <ul>
+      {product.link.map((link: string, index: number) => {
+        // Define hrefs for different links
+        let href = "/";
+        switch (link.toLowerCase()) {
+          case "about us":
+            href = "/about";
+            break;
+          case "contact us":
+            href = '#contact-us';
+            break;
+          case "blog":
+            href = "/blog";
+            break;
+          case "testimonials":
+            href = "/testimonials";
+            break;
+          default:
+            href = "/";
+        }
+
+        return (
+          <li key={index} className="mb-5">
+            <Link href={href} className="text-offwhite text-sm font-normal mb-6 space-links">
+              {link}
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
+))}
+
 
                     {/* CLOUMN-4 */}
 

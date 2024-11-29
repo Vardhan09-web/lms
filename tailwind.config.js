@@ -24,6 +24,9 @@ module.exports = {
     		emailbg: '#6a4c6d',
     		offwhite: '#FDFDFD',
     		offblack: '#333333',
+			Orange: '#F36C50',
+			lightBlue: '#29AEFC',
+			black: '#000000',
     		red: '#FF605C'
     	},
     	fontFamily: {

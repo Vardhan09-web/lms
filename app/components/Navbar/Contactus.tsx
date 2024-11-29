@@ -47,7 +47,7 @@ const Contactusform = () => {
                     </button>
                 </div>
                 <div className='hidden md:block'>
-                    <button type="button" className='text-15px font-medium space-links' onClick={openModal}>
+                    <button type="button" className='text-15px font-medium space-links hover:text-Orange' onClick={openModal}>
                         Contact Us
                     </button>
                 </div>

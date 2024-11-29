@@ -62,7 +62,7 @@ const Navbar = () => {
                                             key={item.name}
                                             href={item.href}
                                             className={classNames(
-                                                item.current ? ' text-purple' : 'hover:text-purple',
+                                                item.current ? ' text-Orange' : 'hover:text-Orange',
                                                 'px-3 py-4 text-15px font-medium space-links'
                                             )}
                                             aria-current={item.href ? 'page' : undefined}
@@ -70,7 +70,7 @@ const Navbar = () => {
                                             {item.name}
                                         </Link>
                                     ))}
-                                    <Contactus />
+                                    <Contactus/>
                                 </div>
                             </div>
                         </div>

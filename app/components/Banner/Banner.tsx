@@ -67,7 +67,7 @@ const Banner = () => {
                                     <img src={'/assets/banner/Stars.svg'} alt="stars-icon" />
                                 </div>
                                 <div>
-                                    <h3 className='text-sm'>Rated by 25k on google.</h3>
+                                    <h3 className='text-sm'>Trusted by more than 16K learners.</h3>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +77,7 @@ const Banner = () => {
                     {/* DROPDOWN BUTTONS */}
 
 
-                    <div className="mx-auto max-w-4xl mt-24 pt-6 pb-8 px-6 lg:max-w-4xl lg:px-8 shadow-lg shadow-purple bg-white rounded-lg boxshadow">
+                    <div className="mx-auto max-w-4xl mt-24 pt-6 pb-8 px-6 lg:max-w-4xl lg:px-8 bg-white rounded-lg boxshadow">
                         <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-8 xl:gap-x-8">
                             <div className="col-span-3">
                                 <Dropdownone />
@@ -86,7 +86,7 @@ const Banner = () => {
                                 <Dropdowntwo />
                             </div>
                             <div className="col-span-3 sm:col-span-2 mt-2">
-                                <button className="bg-purple w-full hover:bg-pruple text-white font-bold py-4 px-3 rounded">
+                                <button className="bg-lightBlue w-full hover:bg-pruple text-white font-bold py-4 px-3 rounded">
                                     Start
                                 </button>
                             </div>
