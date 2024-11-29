@@ -86,13 +86,13 @@ export function MarqueeDemo() {
   const secondRow = reviews.slice(Math.ceil(reviews.length / 2));
 
   return (
-    <div className="relative w-full flex flex-col items-center justify-center overflow-hidden bg-bgpink py-16 md:py-32">
+    <div className="relative flex flex-col items-center justify-center overflow-hidden bg-bgpink py-16 md:py-32">
       {/* Header Section */}
-      <div className="mx-auto max-w-5xl px-6 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between sm:gap-8 pb-10">
+      <div className="mx-auto max-w-7xl px-6 w-full flex flex-col sm:flex-row sm:items-center sm:justify-between sm:gap-8 pb-10">
         {/* Left Side: Title and Description */}
-        <div className="sm:max-w-md  ">
-          <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900">
-            What Our Happy <br /> Students Say
+        <div className="sm:max-w-3xl">
+          <h2 className="text-3xl sm:text-5xl font-bold tracking-tigh text-gray-900">
+            What Our Happy Students Say
           </h2>
           <p className="text-lg font-medium mt-2 ">
             Build skills with our courses and mentors from world-class companies.
@@ -101,14 +101,14 @@ export function MarqueeDemo() {
 
         {/* Right Side: Button */}
         <div className="mt-6 sm:mt-0">
-          <button className="bg-transparent hover:bg-lightBlue text-lightBlue font-semibold hover:text-white py-3 px-6 border border-lightgrey hover:border-transparent rounded">
+          <button className="bg-transparent hover:bg-lightBlue text-lightBlue font-semibold hover:text-white py-3 px-6 border border-lightBlue hover:border-transparent rounded">
             Give Your Review
           </button>
         </div>
       </div>
 
       {/* Marquee Section */}
-      <div className="relative w-full max-w-5xl mx-auto px-6 h-60 md:h-80">
+      <div className="relative w-full max-w-7xl mx-auto px-6 h-60 md:h-80">
         {/* First Marquee Row */}
         <Marquee pauseOnHover className="[--duration:15s] gap-4">
           {firstRow.map((review) => (
