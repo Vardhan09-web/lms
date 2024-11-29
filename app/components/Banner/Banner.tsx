@@ -67,7 +67,7 @@ const Banner = () => {
                                     <img src={'/assets/banner/Stars.svg'} alt="stars-icon" />
                                 </div>
                                 <div>
-                                    <h3 className='text-sm'>Trusted by more than 16K learners.</h3>
+                                    <h3 className='text-sm'>Trusted by more than 16K+ students.</h3>
                                 </div>
                             </div>
                         </div>

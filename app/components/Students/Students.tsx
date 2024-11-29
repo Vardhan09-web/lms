@@ -101,7 +101,7 @@ export function MarqueeDemo() {
 
         {/* Right Side: Button */}
         <div className="mt-6 sm:mt-0">
-          <button className="bg-transparent hover:bg-purple text-purple font-semibold hover:text-white py-3 px-6 border border-lightgrey hover:border-transparent rounded">
+          <button className="bg-transparent hover:bg-lightBlue text-lightBlue font-semibold hover:text-white py-3 px-6 border border-lightgrey hover:border-transparent rounded">
             Give Your Review
           </button>
         </div>
