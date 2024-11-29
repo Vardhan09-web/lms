@@ -22,14 +22,14 @@ const products: ProductType[] = [
 
 const footer = () => {
     return (
-        <div className="bg-bgpurple -mt-64" id="first-section">
+        <div className="bg-black -mt-64" id="first-section">
             <div className="mx-auto max-w-2xl pt-64 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4'>
-                        <img src={'/assets/logo/Logo2.svg'} alt="logo" className='pb-4' />
+                        <img src={'/assets/logo/Logo3.jpg'} alt="logo" className='pb-4' />
                         <h3 className='text-white text-lg font-medium leading-9 mb-4 lg:mb-20'> Level up your skills, and get dream <br /> job with passion. </h3>
                         <div className='flex gap-4'>
                             <Link href="/"><img src={'/assets/footer/insta.svg'} alt="instagram" className='footer-icons' /></Link>
