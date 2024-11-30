@@ -43,12 +43,12 @@ const Navbar = () => {
                             <div className="flex flex-shrink-0 items-center">
                                 <img
                                     className="block h-30px w-30px lg:hidden"
-                                    src={'/assets/logo/Logo.svg'}
+                                    src={'/assets/logo/Logo3.svg'}
                                     alt="Courses-Logo"
                                 />
                                 <img
                                     className="hidden h-48px w-48px lg:block"
-                                    src={'/assets/logo/Logo.svg'}
+                                    src={'/assets/logo/Logo3.svg'}
                                     alt="Courses-Logo"
                                 />
                             </div>
