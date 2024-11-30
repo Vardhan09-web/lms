@@ -73,7 +73,7 @@ const footer = () => {
         let href = "/";
         switch (link.toLowerCase()) {
           case "about us":
-            href = "/about";
+            href = "#aboutus";
             break;
           case "contact us":
             href = '#contact-us';

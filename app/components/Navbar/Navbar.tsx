@@ -22,6 +22,7 @@ const navigation: NavigationItem[] = [
     { name: 'Mentors', href: '#mentors-section', current: false },
     { name: 'Testimonial', href: '#testimonial-section', current: false },
     { name: 'Join', href: '#join-section', current: false },
+    { name: 'About us', href: '#aboutus-section', current: false },
 ]
 
 function classNames(...classes: string[]) {
