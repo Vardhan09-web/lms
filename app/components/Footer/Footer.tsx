@@ -38,17 +38,16 @@ const footer = () => {
         <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
           {/* COLUMN-1 */}
-
-          <div className='col-span-4'>
-            <img src={'/assets/logo/Logo3.svg'} alt="logo" className='pb-4' />
-            <h3 className='text-white text-lg font-medium leading-9 mb-4 lg:mb-20'> Empowering Minds <br /> Envisioning Future. </h3>
-            <div className='flex gap-4'>
-              <Link href="/"><img src={'/assets/footer/insta.svg'} alt="instagram" className='footer-icons' /></Link>
-              <Link href="/"><img src={'/assets/footer/dribble.svg'} alt="dribble" className='footer-icons' /></Link>
-              <Link href="/"><img src={'/assets/footer/twitter.svg'} alt="twitter" className='footer-icons' /></Link>
-              <Link href="/"><img src={'/assets/footer/youtube.svg'} alt="youtube" className='footer-icons' /></Link>
-            </div>
-          </div>
+                    <div className='col-span-4'>
+                        <img src={'/assets/logo/Logo3.svg'} alt="logo" className='pb-4' />
+                        <h3 className='text-white text-lg font-medium leading-9 mb-4 lg:mb-20'> Level up your skills, and get dream <br /> job with passion. </h3>
+                        <div className='flex gap-4'>
+                            <Link href="/"><img src={'/assets/footer/insta.svg'} alt="instagram" className='footer-icons' /></Link>
+                            <Link href="/"><img src={'/assets/footer/dribble.svg'} alt="dribble" className='footer-icons' /></Link>
+                            <Link href="/"><img src={'/assets/footer/twitter.svg'} alt="twitter" className='footer-icons' /></Link>
+                            <Link href="/"><img src={'/assets/footer/youtube.svg'} alt="youtube" className='footer-icons' /></Link>
+                        </div>
+                    </div>
 
           {/* CLOUMN-2/3 */}
 
@@ -65,30 +64,29 @@ const footer = () => {
                         </div>
                     ))} */}
 
-
-          {products.map((product) => (
-            <div key={product.id} className="group relative col-span-2">
-              <p className="text-white text-xl font-semibold mb-9">{product.section}</p>
-              <ul>
-                {product.link.map((link: string, index: number) => {
-                  // Define hrefs for different links
-                  let href = "/";
-                  switch (link.toLowerCase()) {
-                    case "about us":
-                      href = "/about";
-                      break;
-                    case "contact us":
-                      href = '#contact-us';
-                      break;
-                    case "blog":
-                      href = "/blog";
-                      break;
-                    case "testimonials":
-                      href = "/testimonials";
-                      break;
-                    default:
-                      href = "/";
-                  }
+{products.map((product) => (
+  <div key={product.id} className="group relative col-span-2">
+    <p className="text-white text-xl font-semibold mb-9">{product.section}</p>
+    <ul>
+      {product.link.map((link: string, index: number) => {
+        // Define hrefs for different links
+        let href = "/";
+        switch (link.toLowerCase()) {
+          case "about us":
+            href = "/about";
+            break;
+          case "contact us":
+            href = '#contact-us';
+            break;
+          case "blog":
+            href = "/blog";
+            break;
+          case "testimonials":
+            href = "#testimonials";
+            break;
+          default:
+            href = "/";
+        }
 
                   return (
                     <li key={index} className="mb-5">
