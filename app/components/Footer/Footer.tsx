@@ -79,7 +79,7 @@ const footer = () => {
             href = '#contact-us';
             break;
           case "blog":
-            href = "/blog";
+            href = "/undermaintenance";
             break;
           case "testimonials":
             href = "#testimonials";

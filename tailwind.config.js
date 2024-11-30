@@ -23,6 +23,7 @@ module.exports = {
     		bgpurple: '#451F49',
     		emailbg: '#6a4c6d',
     		offwhite: '#FDFDFD',
+			zinc:'#737E82',
     		offblack: '#333333',
 			Orange: '#F36C50',
 			lightBlue: '#29AEFC',

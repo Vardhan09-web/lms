@@ -1,39 +1,44 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import  './globals.css'
 
 const UnderMaintenance: React.FC = () => {
     return (
-        <div className="flex items-center justify-center h-screen bg-gray-100">
-            <div className="text-center">
-                {/* Maintenance Illustration */}
-                <div className="relative w-64 h-64 mx-auto">
-                    <Image 
-                        src="/assets/undermaintenance/undermaintenance.jpg" 
-                        alt="Under Maintenance" 
-                    />
-                </div>
-                
+        <div className="flex flex-col md:flex-row items-center justify-center h-screen bg-gray-100 p-6">
+            {/* Maintenance Illustration */}
+            <div className="relative w-full md:w-1/2 h-auto flex justify-center">
+                <Image 
+                    src="/assets/undermaintenance/undermaintenance.jpg" 
+                    alt="Under Maintenance" 
+                    width={600}
+                    height={600}
+                    priority
+                    className="rounded-lg"
+                />
+            </div>
+
+            {/* Text and Button Section */}
+            <div className="w-full md:w-1/2 text-center md:text-left mt-6 md:mt-0 px-6">
                 {/* Title */}
-                <h1 className="text-4xl font-bold text-gray-800 mt-6">
-                    We'll Be Back Soon!
+                <h1 className="text-4xl font-bold text-gray-800 mb-4">
+                    This Site is Under Maintenance
                 </h1>
 
                 {/* Description */}
-                <p className="text-gray-600 mt-4">
-                    Our website is currently undergoing scheduled maintenance. 
+                <p className="text-gray-600 mb-6">
+                    Our website is currently undergoing scheduled maintenance. <br/>
                     We apologize for the inconvenience and appreciate your patience.
                 </p>
-                <p className="text-gray-500 mt-2">
-                    Please check back later.
-                </p>
 
-                {/* Refresh Button */}
-                <button
-                    onClick={() => window.location.reload()}
-                    className="mt-6 px-6 py-3 bg-blue-600 text-white font-medium text-sm rounded-lg hover:bg-blue-700 transition"
-                >
-                    Refresh Page
-                </button>
+                {/* Button */}
+                <Link href="/">
+                    <button
+                        className="px-6 py-3  text-lightBlue border border-lightBlue font-medium text-sm rounded-lg hover:bg-lightBlue hover:text-white transition"
+                    >
+                        Go back to Home Page
+                    </button>
+                </Link>
             </div>
         </div>
     );

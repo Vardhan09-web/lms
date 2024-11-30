@@ -3,6 +3,7 @@ import BlurIn from '@/components/ui/blur-in';
 import Dropdownone from './Dropdownone';
 import Dropdowntwo from './Dropdowntwo';
 import TypingAnimation from '@/components/ui/typing-animation';
+import Link from 'next/link';
 
 
 const Banner = () => {
@@ -86,9 +87,11 @@ const Banner = () => {
                                 <Dropdowntwo />
                             </div>
                             <div className="col-span-3 sm:col-span-2 mt-2">
+                                <Link href='/undermaintenance'>
                                 <button className="bg-lightBlue w-full hover:bg-pruple text-white font-bold py-4 px-3 rounded">
                                     Start
                                 </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

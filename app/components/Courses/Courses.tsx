@@ -199,8 +199,8 @@ const NamesList = () => {
                 <div className='sm:flex justify-between items-center pb-12'>
                     <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 my-4">Popular Courses</h2>
                     <div>
-                        <Link href='/undermaintenance.tsx'>
-                        <button className="bg-transparent hover:bg-lightBlue text-lightBlue font-medium hover:text-white py-3 px-4 border border-lightBlue hover:border-transparent rounded">
+                        <Link href='/undermaintenance'>
+                        <button className="bg-transparent hover:bg-lightBlue text-Orange font-medium hover:text-white py-3 px-4 border border-lightBlue hover:border-transparent rounded">
                             Explore Courses
                         </button>
                         </Link>
