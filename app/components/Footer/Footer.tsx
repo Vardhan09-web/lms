@@ -114,7 +114,7 @@ const footer = () => {
                             </div>
                         </div>
                     </div> */}
-          <div className='col-span-4'>
+          <div className='col-span-4 ml-20'>
 
             <Carousel className="w-full max-w-xs">
               <CarouselContent>
