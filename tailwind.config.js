@@ -28,7 +28,8 @@ module.exports = {
 			Orange: '#F36C50',
 			lightBlue: '#29AEFC',
 			black: '#000000',
-    		red: '#FF605C'
+    		red: '#FF605C',
+			lightZinc:'#D4D4D4'
     	},
     	fontFamily: {
     		inter: ['Inter', 'sans-serif']

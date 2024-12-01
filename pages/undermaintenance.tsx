@@ -34,7 +34,7 @@ const UnderMaintenance: React.FC = () => {
                 {/* Button */}
                 <Link href="/">
                     <button
-                        className="px-6 py-3  text-lightBlue border border-lightBlue font-medium text-sm rounded-lg hover:bg-lightBlue hover:text-white transition"
+                        className="px-6 py-3  text-white border border-lightBlue bg-lightBlue font-medium text-sm rounded-lg hover:bg-Orange hover:border hover:border-Orange hover:text-white transition"
                     >
                         Go back to Home Page
                     </button>

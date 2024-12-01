@@ -60,7 +60,7 @@ const Navbar = () => {
                             <div className="hidden sm:ml-14 md:block">
                                 <div className="flex space-x-4">
                                     {navigation.map((item) => (
-                                        <Link
+                                        <a
                                             key={item.name}
                                             href={item.href}
                                             className={classNames(
@@ -70,7 +70,7 @@ const Navbar = () => {
                                             aria-current={item.href ? 'page' : undefined}
                                         >
                                             {item.name}
-                                        </Link>
+                                        </a>
                                     ))}
                                     <Contactus/>
                                 </div>

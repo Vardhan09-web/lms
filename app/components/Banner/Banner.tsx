@@ -88,7 +88,7 @@ const Banner = () => {
                             </div>
                             <div className="col-span-3 sm:col-span-2 mt-2">
                                 <Link href='/undermaintenance'>
-                                <button className="bg-lightBlue w-full hover:bg-pruple text-white font-bold py-4 px-3 rounded">
+                                <button className="bg-lightBlue w-full hover:bg-Orange text-white font-bold py-4 px-3 rounded">
                                     Start
                                 </button>
                                 </Link>
