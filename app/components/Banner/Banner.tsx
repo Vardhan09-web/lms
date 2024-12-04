@@ -10,19 +10,52 @@ import { LockClosedIcon } from '@heroicons/react/24/outline';
 
 
 const Banner = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
+  // Function to close the modal
+  const closeModal = () => {
+    setIsOpen(false);
+  };
 
-    let [isOpen,setIsOpen]=useState(false)
+  // Function to open the modal
+  const openModal = () => {
+    setIsOpen(true);
+  };
 
-    const closeModal=()=>{
-        setIsOpen(false)
+  // Form submission handler Added
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const formData = {
+      name: (e.target as any).name.value,
+      number: (e.target as any).number.value,
+      email: (e.target as any).email.value,
+      collegeName: (e.target as any).text.value,
+    };
+
+    try {
+      const response = await fetch("/api/bannerForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Form submitted successfully! Check your email.");
+        setFormSubmitted(true); // Set the flag for successful submission
+        (e.target as any).reset(); // Reset form fields
+        closeModal(); // Close the modal after submission
+      } else {
+        alert("Failed to submit the form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      alert("An unexpected error occurred.");
     }
-
-    const openModal=()=>{
-        setIsOpen(true)
-    }
-
-
+  };
 
     return (
         <>
@@ -153,7 +186,7 @@ const Banner = () => {
                                                     Register your account
                                                 </h2> */}
                                             </div>
-                                            <form className="mt-8 space-y-6" action="#" method="POST">
+                                            <form className="mt-8 space-y-6" onSubmit={handleSubmit}> 
                                                 <input type="hidden" name="remember" defaultValue="true" />
                                                 <div className=" space-y-5 rounded-md shadow-sm">
                                                     <div>
@@ -274,3 +307,4 @@ const Banner = () => {
 }
 
 export default Banner;
+
