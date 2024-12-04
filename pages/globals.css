@@ -34,18 +34,18 @@ html:not([data-scroll="0"]) .navbar {
   z-index: 3;
 }
 
-.banner-image {
+/* .banner-image {
   background-image: url('/assets/banner/background.png');
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
-@media screen and (max-width: 640px) {
+/* @media screen and (max-width: 640px) {
   .banner-image {
     background-image: none !important;
     background-color: #FCF5EF;
   }
-}
+} */
 
 .bg-newsletter {
   background-image: url('/assets/newsletter/hands.svg');

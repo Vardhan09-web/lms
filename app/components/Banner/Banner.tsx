@@ -3,7 +3,7 @@ import BlurIn from '@/components/ui/blur-in';
 import Dropdownone from './Dropdownone';
 import Dropdowntwo from './Dropdowntwo';
 import TypingAnimation from '@/components/ui/typing-animation';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { LockClosedIcon } from '@heroicons/react/24/outline';
@@ -182,9 +182,9 @@ const Banner = () => {
                                                     src="/assets/logo/Logo3.svg"
                                                     alt="Your Company"
                                                 />
-                                                {/* <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-black">
-                                                    Register your account
-                                                </h2> */}
+                                                <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-black">
+                                                    Apply for Internship
+                                                </h2>
                                             </div>
                                             <form className="mt-8 space-y-6" onSubmit={handleSubmit}> 
                                                 <input type="hidden" name="remember" defaultValue="true" />
