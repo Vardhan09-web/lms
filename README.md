@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Adding .env.local File
+
+1. Create a .env.local File
+In the root directory of the project, create a file named .env.local where package.json is located.
+
+2.paste below code in tha file
+EMAIL_USER=daa28cff23b7aa
+EMAIL_PASS=502ffed5439fac
+EMAIL_HOST=smtp.mailtrap.io
+EMAIL_PORT=2525 
+Then Save it.. done
+
 ## Getting Started
 
 First, run the development server:
