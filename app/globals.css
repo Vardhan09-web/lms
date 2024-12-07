@@ -34,8 +34,8 @@ html:not([data-scroll="0"]) .navbar {
   z-index: 3;
 }
 
-/* .banner-image {
-  background-image: url('/assets/banner/background.png');
+.banner-image {
+  background-image: url('/assets/banner/back2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -45,7 +45,7 @@ html:not([data-scroll="0"]) .navbar {
     background-image: none !important;
     background-color: #FCF5EF;
   }
-} */
+}
 
 .bg-newsletter {
   background-image: url('/assets/newsletter/hands.svg');
