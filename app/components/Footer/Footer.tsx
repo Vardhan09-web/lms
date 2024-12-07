@@ -139,7 +139,7 @@ const footer = () => {
               <CarouselNext />
             </Carousel> */}
 
-<Carousel className="w-full max-w-xs">
+<Carousel className="w-full max-w-sm h-[350px]">
   <CarouselContent>
     {Array.from({ length: 5 }).map((_, index) => (
       <CarouselItem key={index}>

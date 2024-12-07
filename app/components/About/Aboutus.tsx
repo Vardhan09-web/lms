@@ -67,9 +67,9 @@ const AboutUs = () => {
 
 
 
-     <div className='mt-60 mr-40'>
+     <div className='mt-60 mr-35 w-[60%]'>
 
-     {/* <Carousel className="w-full max-w-xs">
+     <Carousel className="w-full max-w-md">
   <CarouselContent>
     {Array.from({ length: 5 }).map((_, index) => (
       <CarouselItem key={index}>
@@ -77,7 +77,7 @@ const AboutUs = () => {
           <Card>
             <CardContent className="flex aspect-square items-center justify-center p-6">
               <img
-                src={`/assets/carousel/img${index + 1}.jpg`} // Dynamic path for each image
+                src={`/assets/carousel/Abt${index + 1}.jpg`} // Dynamic path for each image
                 alt={`Carousel Item ${index + 1}`} // Alt text for accessibility
                 className="object-cover w-full h-full" // Ensures proper scaling
               />
@@ -89,17 +89,17 @@ const AboutUs = () => {
   </CarouselContent>
   <CarouselPrevious />
   <CarouselNext />
-</Carousel> */}
+</Carousel>
 
 
-<Carousel className="w-full max-w-md">
+{/* <Carousel className="w-full max-w-md">
               <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
                   <CarouselItem key={index}>
                     <div className="p-1">
                       <Card>
                         <CardContent className="flex aspect-square items-center justify-center p-6">
-                          {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
+                          <span className="text-4xl font-semibold">{index + 1}</span>
                           <img
                             src={`https://via.placeholder.com/300x300?text=Image+${index + 1}`} // Example image URL
                             alt={`Carousel Item ${index + 1}`} // Alt text for the image
@@ -113,7 +113,7 @@ const AboutUs = () => {
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
-            </Carousel>
+            </Carousel> */}
 
 
           </div>
