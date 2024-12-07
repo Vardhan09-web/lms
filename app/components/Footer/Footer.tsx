@@ -116,14 +116,14 @@ const footer = () => {
                     </div> */}
           <div className='col-span-4 ml-20'>
 
-            <Carousel className="w-full max-w-xs">
+            {/* <Carousel className="w-full max-w-xs">
               <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
                   <CarouselItem key={index}>
                     <div className="p-1">
                       <Card>
                         <CardContent className="flex aspect-square items-center justify-center p-6">
-                          {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
+                          <span className="text-4xl font-semibold">{index + 1}</span>
                           <img
                             src={`https://via.placeholder.com/300x300?text=Image+${index + 1}`} // Example image URL
                             alt={`Carousel Item ${index + 1}`} // Alt text for the image
@@ -137,7 +137,30 @@ const footer = () => {
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
-            </Carousel>
+            </Carousel> */}
+
+<Carousel className="w-full max-w-xs">
+  <CarouselContent>
+    {Array.from({ length: 5 }).map((_, index) => (
+      <CarouselItem key={index}>
+        <div className="p-1">
+          <Card>
+            <CardContent className="flex aspect-square items-center justify-center p-6">
+              <img
+                src={`/assets/carousel/img${index + 1}.jpg`} // Dynamic path for each image
+                alt={`Carousel Item ${index + 1}`} // Alt text for accessibility
+                className="object-cover w-full h-full" // Ensures proper scaling
+              />
+            </CardContent>
+          </Card>
+        </div>
+      </CarouselItem>
+    ))}
+  </CarouselContent>
+  <CarouselPrevious />
+  <CarouselNext />
+</Carousel>
+
 
 
           </div>
