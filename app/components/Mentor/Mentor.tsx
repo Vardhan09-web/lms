@@ -1,5 +1,7 @@
 // MENTORS DATA
 
+import Link from "next/link";
+
 interface Product {
     id: number;
     name: string;
@@ -83,9 +85,11 @@ const Mentor = () => {
                 <div className='sm:flex justify-between items-center mb-12'>
                     <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-900 my-4">Meet with our Mentors</h2>
                     <div>
+                        <Link href='/undermaintenance'>
                         <button className="bg-lightBlue hover:bg-Orange text-white font-medium hover:text-white py-3 px-4 border border-lightBlue hover:border-transparent rounded">
                             Explore 10+ our Mentor
                         </button>
+                        </Link>
                     </div>
                 </div>
 

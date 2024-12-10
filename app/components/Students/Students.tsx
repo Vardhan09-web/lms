@@ -3,6 +3,7 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
+import Link from "next/link";
 
 // CAROUSEL DATA
 
@@ -101,9 +102,11 @@ export function MarqueeDemo() {
 
         {/* Right Side: Button */}
         <div className="mt-6 sm:mt-0">
+          <Link href='/undermaintenance'>
           <button className="bg-lightBlue hover:bg-Orange text-white font-semibold hover:text-white py-3 px-6 border border-lightBlue hover:border-transparent rounded">
             Give Your Review
           </button>
+          </Link>
         </div>
       </div>
 
