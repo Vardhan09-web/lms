@@ -9,13 +9,13 @@ interface Data {
 
 const data: Data[] = [
     {
-        imgSrc: "/assets/slickCompany/airbnb.svg"
+        imgSrc: "/assets/slickCompany/kl.png"
     },
     {
-        imgSrc: "/assets/slickCompany/hubspot.svg"
+        imgSrc: "/assets/slickCompany/BVRIT.png"
     },
     {
-        imgSrc: "/assets/slickCompany/microsoft.svg"
+        imgSrc: "/assets/slickCompany/parul.png"
     },
     {
         imgSrc: "/assets/slickCompany/google.svg"
